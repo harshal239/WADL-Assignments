@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Assignment 2</title>
+  </head>
+  <body>
+    <div class="form__container">
+      <div class="form__header">
+        <h2>Add user details</h2>
+        <a href="/Users.html"><button class="btn">All Users</button></a>
+      </div>
+      <form class="login__form" id="login__form">
+        <div class="field__container">
+          <label for="Name">Enter Name:</label>
+          <input type="text" name="name" class="form__input" id="name" />
+        </div>
+        <div class="field__container">
+          <label for="Email">Enter Email Address:</label>
+          <input type="email" name="email" class="form__input" id="email" />
+        </div>
+        <div class="field__container">
+          <label for="Phone no.">Enter Phone Number:</label>
+          <input type="tel" name="phone" class="form__input" id="phone" />
+        </div>
+        <div class="btn__container">
+          <input type="reset" value="Reset" class="btn reset-btn" />
+          <button class="btn submit-btn" onclick="myFunction()" id="submit-btn">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+    <div id="snackbar">Added new user</div>
+    <script src="./script.js"></script>
+  </body>
+</html>
