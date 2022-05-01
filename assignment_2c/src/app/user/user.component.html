@@ -1,0 +1,54 @@
+<div class="user__container">
+  <div class="">
+    <div class="form__field">
+      <label class="">Username: </label>
+
+      <input
+        type="text"
+        class="form-control"
+        [(ngModel)]="username"
+        placeholder="username"
+        class="form__input"
+      />
+    </div>
+
+    <div class="form__field">
+      <label class="">Password: </label>
+      <input
+        type="password"
+        class="form-control"
+        [(ngModel)]="password"
+        placeholder="password"
+        class="form__input"
+      />
+    </div>
+    <div class="btn__container">
+      <button class="btn submit-btn" (click)="handleAdd()">Add User</button>
+      <button class="btn reset-btn" (click)="userList.pop()">
+        Remove User
+      </button>
+    </div>
+  </div>
+
+  <!-- </form> -->
+
+  <hr />
+  <h4>Users List</h4>
+
+  <ul class="list-group list-group-horizontal">
+    <h5 class="list-group-item flex-fill">Sr. No</h5>
+    <h5 class="list-group-item flex-fill">Usernames</h5>
+    <h5 class="list-group-item flex-fill">Passwords</h5>
+  </ul>
+  <!-- <ul class="list-group list-group-horizontal"> -->
+
+  <div *ngFor="let user of userList; index as indexOfelement">
+    <tr class="list-group list-group-horizontal">
+      <td class="list-group-item flex-fill">{{ indexOfelement }}</td>
+      <td class="list-group-item flex-fill">{{ user.name }}</td>
+      <td class="list-group-item flex-fill">{{ user.pass }}</td>
+    </tr>
+  </div>
+
+  <!-- </ol> -->
+</div>

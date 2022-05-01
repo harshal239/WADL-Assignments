@@ -1,0 +1,61 @@
+.user__container {
+  margin: 2rem 0rem;
+  background-color: #ffffff;
+  padding: 3rem 2rem;
+  border-radius: 0.5rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.form__field {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.form__input {
+  margin-top: 0.5rem;
+  border: 2px solid gainsboro;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+
+  font-size: 1rem;
+  font-weight: 500;
+}
+.form__input:focus {
+  border-color: #1d4ed8;
+}
+
+button,
+input {
+  border: none;
+  outline: none;
+  font-family: inherit;
+}
+.btn__container {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 0.75rem 0.75rem;
+  border-radius: 0.25rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+
+  width: 100%;
+  cursor: pointer;
+}
+.reset-btn {
+  background-color: #d14343;
+}
+.reset-btn:hover {
+  background-color: #ff4949;
+}
+.submit-btn {
+  background-color: steelblue;
+}
+.submit-btn:hover {
+  background-color: rgb(87, 160, 219);
+}

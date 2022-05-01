@@ -1,6 +1,6 @@
 let obj = new XMLHttpRequest();
 let users = [];
-obj.open("GET", "users.json");
+obj.open("GET", "http://localhost:3006/Users");
 obj.send();
 obj.onload = () => {
   users = JSON.parse(obj.responseText);

@@ -7,7 +7,7 @@ submitBtn.addEventListener("click", (event) => {
   event.preventDefault();
 
   let xhr = new XMLHttpRequest();
-  xhr.open("POST", "users.json");
+  xhr.open("POST", "http://localhost:3006/Users", true);
   xhr.setRequestHeader("Content-Type", "application/json");
 
   let name = document.getElementById("name");

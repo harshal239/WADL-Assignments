@@ -12,8 +12,10 @@ body {
   width: 100%;
 
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #eee;
 }
 
 button,
@@ -24,6 +26,7 @@ input {
 }
 
 .form__container {
+  background-color: #fff;
   padding: 2rem;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   border-radius: 0.5rem;
